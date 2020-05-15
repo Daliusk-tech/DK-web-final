@@ -1,0 +1,201 @@
+@import "vars.scss";
+@import "top-input.scss";
+@import "second-page.scss";
+@import "third-page.scss";
+@import "features-details.scss";
+@import "pricing-page.scss";
+@import "testimonials-page.scss";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 1400px;
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #1c1c1c;
+
+    nav {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        a {
+        margin-right: 45px;
+        text-decoration: none;
+        color: $text-color;
+        opacity: 69%;
+
+            &:hover {
+                opacity: 100%;;
+            }
+
+        }
+        .last-a {
+            margin-right: 0;
+        }
+    }
+}
+
+.background {
+    width: 100vw;
+    height: 640px;
+    background-image: url("background-city.jpg");
+    background-size: cover;
+    background-position-y: -120px;
+    
+
+    .background-shaddow {
+        width: 100vw;
+        height: 640px;
+        background-color: rgba($color: #1c1c1c, $alpha: 0.8);
+    }
+}
+
+.block {
+
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    .block__left {
+        padding-top: 130px;
+        
+        
+        .block__left__logo {
+            width: 245px;
+            height: 107px;
+            background-image: url("Logo.svg");
+            background-size: cover;
+        }
+    }
+    article {
+        width: 650px;
+    }
+
+    h1 {
+        padding-top: 20px;
+        font-size: 36px;
+        font-weight: 600px;
+    }
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        width: 85px;
+        height: 2px;
+        border: none;
+        background-color: $text-color;
+
+    }
+
+    h1, p {
+        color: $text-color;
+    }
+    article {
+        margin-bottom: 45px;
+    }
+
+    .download {
+        width: 135px;
+        height: 40px;
+        background-color: transparent;
+        border: 2px solid $text-color;
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 600px;
+        
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: black;
+            color: white;
+            filter: brightness(100%);
+        }
+
+        &:active {
+            border: 2px solid black;
+        }
+
+    }
+}
+footer {
+  
+    padding: 20px 150px 20px 150px;
+    display: flex;
+    flex-direction: row;
+    
+    
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        margin-right: 140px;
+        p {
+            width: 395px;
+            max-height: 40px;
+            font-size: 14px;
+            color: #86878B;
+        }
+    }
+
+    .icon-block {
+            display: flex;
+            flex-direction: row;
+           
+            
+        
+        .icon {
+            margin: auto;
+            margin-right: 135px;
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            opacity: 80%;
+        }
+
+        .fb {
+
+            width: 15px;
+            background-image: url("facebook.svg");
+        }
+
+        .insta {
+            background-image: url("insta.svg");
+        }
+
+        .twitter {
+            width: 35px;
+            background-image: url("twitter.svg");
+        }
+
+        .pinterest {
+            width: 27px;
+            background-image: url("pinterest.svg");
+        }
+
+        .wifi {
+            background-image: url("wifi.svg");
+            margin-right: 0;
+        }
+    }
+
+}

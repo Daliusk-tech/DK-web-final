@@ -1,0 +1,83 @@
+.testimonials-page {
+    padding-left: 170px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 600px;
+        text-align: center;
+    }
+
+    hr {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        width: 65px;
+        height: 2px;
+        border: none;
+        background-color: $blue-background;
+    }
+    .testimonials-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .chat-block {
+
+            margin-right: 120px;
+
+            .chat-bubble {
+                position: relative;
+                margin-bottom: 20px;
+                padding: 20px;
+                width: 280px;
+                background-color: $blue-background;
+                color: $text-color;
+                border-radius: 5px;
+            }
+
+            .chat-bubble::after {
+                content: '';
+                position: absolute;
+                left: 15px;
+                bottom: -5px;
+                width: 20px;
+                height: 20px;
+                border-radius: 2px;
+                background-color: $blue-background;
+                transform: rotate(45deg);
+            }
+
+            .person-block {
+
+                display: flex;
+                flex-direction: row;
+
+                .photo {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                    background-image: url("leo.jpg");
+                    background-size: cover;
+                    background-position-x: -15px;
+                }
+
+                .person {
+                    margin-top: 15px;
+                    margin-left: 15px;
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: normal;
+                    }
+                    p {
+                        color: #86878B;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

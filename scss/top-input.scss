@@ -1,0 +1,116 @@
+
+.block__right {
+    
+    margin-top: 160px;
+    width: 360px;
+    background-color: #ffffff;
+
+    &__top {
+        padding: 15px;
+        background-color: $text-color;
+        
+        h2 {
+            text-align: center;
+            color: #1c1c1c;
+            font-size: 20px;
+            font-weight: 600px;
+
+            span {
+                color: $red-background;
+            }
+        }
+    }
+    h3 {
+        margin-top: 30px;
+        margin-left: 50px;
+        text-align: left;
+        color: #1c1c1c;
+        font-size: 16px;
+        font-weight: 600px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        input {
+            margin: 25px 50px 0 50px;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid $input-border;
+            font-size: 14px;
+
+            &::placeholder {
+                color: $input-border;
+                font-size: 12px;
+            }
+            &:focus{
+                outline: none;
+            }
+            &:active, &:hover {
+                border-bottom: 2px solid $input-border;
+            }
+        }
+
+    }
+    &__radio {
+        display: flex;
+        justify-content: left;
+        margin-top: 15px;
+        padding-left: 50px;
+
+        input {
+            display: none;    
+        }
+
+
+        & label {
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-weight: 600px;
+            font-size: 9px;
+            color: black;
+            cursor: pointer;
+        }
+    }
+    &__bottom {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: $green-background;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600px;
+        color: $text-color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #3DF0A4;
+        }
+    }
+}
+.radio-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid $green-background;
+    cursor: pointer;
+}
+
+.radio-button::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.input-radio:checked + .radio-button::after {
+ 
+    background-color: $green-background;
+}
+
+

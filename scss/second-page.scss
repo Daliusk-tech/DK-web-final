@@ -1,0 +1,119 @@
+.features-background {
+    width: 100vw;
+    height: 600px;
+    background-image: url("second-background.jpg");
+    background-size: cover;
+    background-position-y: -300px;
+    
+    .features-shaddow {
+        padding-left: 150px;
+        padding-right: 150px;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 600px;
+        background-image: linear-gradient(rgba($color: #6696E2, $alpha: 0.4) , rgba($color: #E27866, $alpha: 0.4));
+        
+
+        .features__left {
+            margin-top: 115px;
+            margin-right: 50px;
+            width: 100px;
+            max-height: 340px;
+            
+
+            &__active {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 100px;
+                height: 100px;
+                background-color: #A37169;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600px;
+                color: $text-color;
+
+                &:hover {
+                    background-color: $red-background;
+                }
+
+                p { 
+                    margin: auto;
+                    transform: rotate(-45deg);
+                }
+                
+            }
+
+            .register, .apply {
+                margin-bottom: 20px;
+            }
+            
+        }
+
+        .features__article {
+            margin-top: 140px;
+            margin-right: 80px;
+            width: 530px;
+            color: $text-color;
+
+            h2 {
+                margin-bottom: 35px;
+            }
+        }
+
+        .features__right {
+            margin-top: 115px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+            max-height: 400px;
+         
+
+            &__explore, &__square, &__explore__shaddow {
+                width: 170px;
+                height: 170px;
+                background-size: cover;
+            }
+
+            &__explore {
+                
+                background-image: url("leaves.png");
+                color: $text-color;
+                font-size: 20px;
+                
+                
+                
+                &__shaddow {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    background-color: rgba($color: $red-background, $alpha: 0.8);
+
+                    p {
+                        margin: auto;
+                        font-weight: 600px;
+                    }
+                }
+
+                
+
+            }
+
+            &__square {
+                background-image: url("salad.jpg");
+                margin-left: 25px;
+            }
+
+            &__rectangle {
+                width: 370px;
+                height: 180px;
+                background-image: url("stairs.jpg");
+                background-size: cover;
+            }
+        }
+
+
+    }
+
+}

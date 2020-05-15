@@ -1,0 +1,112 @@
+.pricing-background {
+
+    padding: 40px 150px 120px 150px;
+    width: 100vw;
+    background-color: $blue-background;
+
+    h2, p {
+        color: $text-color;
+        text-align: center;
+    }
+
+    hr {
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 65px;
+        height: 2px;
+        background-color: $green-background;
+        border: none;
+        
+    }
+
+    .pricelist {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 120px;
+
+        &__pricebox {
+            margin-right: 40px;
+            width: 345px;
+            
+
+            &__top {
+                border-radius: 5px 5px 0 0;
+                height: 29.09vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #333333;
+                border-bottom: 6px solid $green-background;
+                color: $text-color;
+
+                    h3, img, p {
+                        margin: 0 auto;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: normal;
+                    }
+                    img {
+                        width: 85px;
+                        height: 115px;
+                    }
+                    .professional {
+                        width: 112px;
+                        height: 115px;
+                    }
+
+                    .enterprise {
+                        width: 140px;
+                        height: 115px;
+                    }
+                    p { 
+                        font-size: 14px;
+                        color: #707070;
+                    }
+            }
+
+            .popular-top {
+                border: none;
+            }
+            &__popular {
+
+                padding: 10px;
+                background-color: $green-background;
+                color: $text-color;
+                font-size: 14px;
+                text-align: center;
+    
+            }
+
+            &__specs {
+                padding: 10px;
+                background-color: $text-color;
+                border-radius: 0 0 5px 5px; 
+              
+
+                ul {
+                    list-style: none; 
+                    margin: 0;
+                    padding-inline-start: 0;  
+                                  
+
+                    li {
+                        padding: 5px 0 5px;
+                        text-transform: uppercase;
+                        color: #86878B;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .most-popular {
+            margin-top: -38px;
+        }
+    }
+}
